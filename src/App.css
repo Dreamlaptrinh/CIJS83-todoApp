@@ -2,6 +2,109 @@
   text-align: center;
 }
 
+
+.todoApp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Todo{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.Todo .newTodo{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0.5px solid;
+}
+.Todo .todo-button{
+  width: 60px;
+  height: 33px;
+  border-radius: 10px;
+  color: #0057ff;
+  background-color: aqua;
+  border: 0.5px solid;
+}
+
+.task-todo{
+  width: 500px;
+  display: flex;
+  height: 26px;
+  border-bottom: #80808052 solid;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.task-todo .filter{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+.task-todo .filter li .liContainer{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  height: 23px;
+}
+
+.task-todo .filter li .liContainer a:hover,a.selected{
+  border-bottom: #6192fb solid;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+.listView{
+  width: 500px;
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+
+}
+
+.listView .view{
+  display: flex;
+  justify-content: space-between
+}
+.listView .completed label{
+  color: black;
+	text-decoration: line-through;
+}
+
+
+
+
+
+.task-todo .filter li a{
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.listView .view .destroy{
+  background: white;
+  border: none;
+}
+
+
+
+
+
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
